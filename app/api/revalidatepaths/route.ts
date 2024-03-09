@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 export const runtime = 'edge';
 
-export async function POST(): Promise<NextResponse> {
+export async function GET(): Promise<NextResponse> {
   revalidatePath('/');
   revalidatePath('/terms-conditions');
   revalidatePath('/shipping-return-policy');
