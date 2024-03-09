@@ -30,12 +30,12 @@ const ProductCard = ({ product: item }: { product: Product }) => {
   return (
     <Link
       className={cn(
-        'flex flex-col gap-2 rounded-md bg-background p-3 shadow-sm',
+        'relative flex flex-col gap-2 rounded-md bg-background p-3 shadow-sm',
         'transition-all hover:-translate-y-1 hover:shadow-md active:translate-y-0.5'
       )}
       href={`/product/${item.handle}`}
     >
-      <div className="relative aspect-square h-52 w-full">
+      <div className="relative aspect-square h-full w-full">
         <Image
           src={item.featuredImage.url}
           alt={item.title}
@@ -45,17 +45,19 @@ const ProductCard = ({ product: item }: { product: Product }) => {
         />
       </div>
 
-      <div className="mt-auto">
-        <h3 className="text-lg font-medium text-foreground/80">{item.title}</h3>
-        {/* <p className="text-sm text-foreground/60">{subtitle}</p> */}
-      </div>
+      <div>
+        <div className="mt-auto">
+          <h3 className="text-lg font-medium text-foreground/80">{item.title}</h3>
+          {/* <p className="text-sm text-foreground/60">{subtitle}</p> */}
+        </div>
 
-      <div className="flex items-end">
-        <Price
-          amount={item.priceRange.maxVariantPrice.amount}
-          currencyCode={item.priceRange.maxVariantPrice.currencyCode}
-          currencyCodeClassName="hidden"
-        />
+        <div className="flex items-end">
+          <Price
+            amount={item.priceRange.maxVariantPrice.amount}
+            currencyCode={item.priceRange.maxVariantPrice.currencyCode}
+            currencyCodeClassName="hidden"
+          />
+        </div>
       </div>
     </Link>
   );

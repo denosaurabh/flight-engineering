@@ -9,8 +9,8 @@ export const ProductSpecifications = ({ product }: { product: Product }) => {
     product.metafields.find((m) => m?.key === 'product_includes')?.value || '';
 
   return (
-    <div className="mt-28 flex h-fit w-full flex-col justify-between rounded-lg bg-background p-10 shadow-lg sm:flex-row">
-      <div className="flex flex-col">
+    <div className="mt-28 flex h-fit w-full flex-col justify-between gap-8 rounded-lg bg-background p-10 shadow-lg sm:flex-row">
+      <div className="flex flex-1 flex-col">
         <p className="text-2xl font-bold text-foreground/90">Specifications</p>
         <Prose
           className="text my-4 w-fit text-left leading-tight text-foreground/80"
@@ -18,7 +18,7 @@ export const ProductSpecifications = ({ product }: { product: Product }) => {
         />
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-1 flex-col">
         <p className="text-2xl font-bold text-foreground/90">Product Includes</p>
         <Prose
           className="text my-4 leading-tight text-foreground/80"
