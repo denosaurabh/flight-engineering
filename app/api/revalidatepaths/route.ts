@@ -9,6 +9,7 @@ export async function GET(): Promise<NextResponse> {
   revalidatePath('/shipping-return-policy');
   revalidatePath('/privacy-policy');
   revalidatePath('/contact');
+  revalidatePath('/product/[handle]', 'page');
 
   return NextResponse.json({ ok: true });
 }
