@@ -31,7 +31,7 @@ export function ProductDescription({ product }: { product: Product }) {
           />
 
           <div className="mr-auto w-auto text-sm font-medium text-foreground/70">
-            10% off on preorder
+            25% off on preorder
           </div>
         </div>
 
