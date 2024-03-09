@@ -1,7 +1,7 @@
 import { FAQ } from 'components/faq';
+import { HowButton } from 'components/how-button';
 import { ProductsList } from 'components/list';
 import { Newsletter } from 'components/newsletter';
-import { Button } from 'components/ui/button';
 
 export const runtime = 'edge';
 
@@ -21,9 +21,7 @@ export default async function HomePage() {
           <h2 className="text font-semibold">the problem?</h2>
           <p className="text-foreground/80">the problem. </p>
 
-          <Button variant="link" className="mt-2 px-0 text-blue-800">
-            HOW?
-          </Button>
+          <HowButton />
         </div>
 
         <ProductsList />
