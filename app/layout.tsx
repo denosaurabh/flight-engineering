@@ -36,7 +36,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
   return (
     <html lang="en" className={GeistSans.variable}>
       <body className="mx-auto mt-12 max-w-4xl px-4">
-        <p className="mb-6 rounded-md bg-foreground/5 px-4 py-2 text-sm font-medium">
+        <p className="mb-6 rounded-md bg-foreground/5 px-4 py-2 text-sm font-bold text-foreground/70">
           25% off on all preorders before 25 March
         </p>
 

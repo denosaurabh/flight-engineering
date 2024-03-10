@@ -4,6 +4,7 @@ import { Product } from 'lib/shopify/types';
 import { cn } from 'lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
+import { NewComponentForm } from './newcomponent-form';
 
 export async function ProductsList() {
   // Collections that start with `hidden-*` are hidden from the search page.
@@ -18,6 +19,8 @@ export async function ProductsList() {
           {homepageItems.map((p, i) => (
             <ProductCard key={i} product={p} />
           ))}
+
+          <NewComponentForm />
         </section>
       </div>
     </div>
@@ -47,14 +50,22 @@ const ProductCard = ({ product: item }: { product: Product }) => {
 
       <div>
         <div className="mt-auto">
-          <h3 className="text-lg font-medium text-foreground/80">{item.title}</h3>
+          <h3 className="text-lg font-medium text-foreground/90">{item.title}</h3>
           {/* <p className="text-sm text-foreground/60">{subtitle}</p> */}
         </div>
 
-        <div className="flex items-end">
+        <div className="flex items-end gap-2">
           <Price
+            className="text-foreground/70"
             amount={item.priceRange.maxVariantPrice.amount}
             currencyCode={item.priceRange.maxVariantPrice.currencyCode}
+            currencyCodeClassName="hidden"
+          />
+
+          <Price
+            className="text text-foreground/30 line-through"
+            amount={item.compareAtPriceRange.maxVariantPrice.amount}
+            currencyCode={item.compareAtPriceRange.maxVariantPrice.currencyCode}
             currencyCodeClassName="hidden"
           />
         </div>
