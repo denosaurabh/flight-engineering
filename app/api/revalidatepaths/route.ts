@@ -5,6 +5,7 @@ export const runtime = 'edge';
 
 export async function GET(): Promise<NextResponse> {
   revalidatePath('/');
+  revalidatePath('/about');
   revalidatePath('/terms-conditions');
   revalidatePath('/shipping-return-policy');
   revalidatePath('/privacy-policy');
