@@ -1,12 +1,11 @@
 import { Newsletter } from 'components/Email/email';
-import { ActionButton } from 'components/action-button';
 import { FAQ } from 'components/faq';
 import { ProductsList } from 'components/list';
 
 export const runtime = 'edge';
 
 export const metadata = {
-  description: 'High-performance ecommerce store built with Next.js, Vercel, and Shopify.',
+  description: 'Place for latest & affordable modules for makers in India.',
   openGraph: {
     type: 'website'
   }
@@ -28,12 +27,13 @@ export default async function HomePage() {
             <br />- order internationally with high shipping and custom charges.
             <br />
             <br />
-            We solve this problem by designing & assembling modules in India, <br />
-            which significantly cuts a modules&apos;s cost and bring latest hardware.
+            Our goal is to provide high quality and low cost modules in india, by designing &
+            assembling modules in house, <br />
+            which significantly reduces cost and brings latest hardware.
             <br />
             <br />
           </p>
-          <ActionButton />
+          {/* <ActionButton /> */}
         </div>
 
         <ProductsList />
