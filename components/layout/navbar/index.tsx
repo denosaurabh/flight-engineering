@@ -21,7 +21,9 @@ export default async function Navbar() {
             <div className="w-min flex-none text-2xl font-semibold uppercase">{SITE_NAME}</div>
           </Link>
 
-          <p className="text text-foreground/80">affordable sensor modules for students in India</p>
+          <p className="text text-foreground/80">
+            Place for latest & affordable modules for makers in India
+          </p>
         </div>
 
         <div className="flex justify-end">

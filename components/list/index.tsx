@@ -14,7 +14,9 @@ export async function ProductsList() {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-4">
+        <p className="text-sm font-medium uppercase">{homepageItems.length} Modules</p>
+
         <section className="grid auto-rows-[400px] grid-rows-[400px] gap-2 sm:grid-cols-2">
           {homepageItems.map((p, i) => (
             <ProductCard key={i} product={p} />
@@ -56,14 +58,14 @@ const ProductCard = ({ product: item }: { product: Product }) => {
 
         <div className="flex items-end gap-2">
           <Price
-            className="text-foreground/70"
+            className="font-medium text-foreground/70"
             amount={item.priceRange.maxVariantPrice.amount}
             currencyCode={item.priceRange.maxVariantPrice.currencyCode}
             currencyCodeClassName="hidden"
           />
 
           <Price
-            className="text text-foreground/30 line-through"
+            className="text-sm text-foreground/40 line-through"
             amount={item.compareAtPriceRange.maxVariantPrice.amount}
             currencyCode={item.compareAtPriceRange.maxVariantPrice.currencyCode}
             currencyCodeClassName="hidden"
