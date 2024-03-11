@@ -15,7 +15,7 @@ export const Newsletter = () => {
   return (
     <div className="flex w-full flex-col items-center gap-2 space-y-2 rounded-lg border border-border bg-background/50 px-4 py-6 shadow-sm">
       <p className="text text-foreground/80">
-        Be the first to know when we add new components and get 10% discount on all orders.
+        Be the first to know when we add new components and get 10% discount on your first order.
       </p>
 
       <form action={formAction} className="flex w-full flex-col justify-center gap-2 sm:flex-row">
