@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
+import { Newsletter } from 'components/Email/email';
 import { FAQ } from 'components/faq';
-import { Newsletter } from 'components/newsletter';
 import { Gallery } from 'components/product/gallery';
 import { ProductDescription } from 'components/product/product-description';
 import { ProductSpecifications } from 'components/product/specifications';
