@@ -40,7 +40,7 @@ const ProductCard = ({ product: item }: { product: Product }) => {
       )}
       href={`/product/${item.handle}`}
     >
-      <div className="relative aspect-square h-full w-full">
+      <div className="relative h-full w-full">
         <Image
           src={item.featuredImage.url}
           alt={item.title}

@@ -14,7 +14,7 @@ export default async function Navbar() {
         <MobileMenu menu={menu} />
       </div> */}
 
-      <div className="flex w-full justify-between">
+      <div className="flex w-full flex-col justify-between md:flex-row">
         <div className="flex flex-col items-start justify-start gap-4">
           <Link href="/" className="mr-2 flex w-full items-center gap-3">
             <LogoSquare size="xl" />
