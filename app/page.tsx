@@ -24,13 +24,13 @@ export default async function HomePage() {
             <br />- internationally with high shipping and custom charges. */}
             When makers buy modules in India, they have to either: <br /> <br />
             - order outdated modules domestically, often with lacking documentation, or
-            <br />- order internationally with high shipping and custom charges.
+            <br />- order internationally with high shipping and customs charges.
             <br />
             <br />
-            Our goal is to provide high quality and low cost modules in india, by designing &
-            assembling modules in house, <br />
-            which significantly reduces cost and brings latest hardware.
+            Our goal is to provide high quality and low-cost modules in India, by designing &
+            assembling modules in-house,
             <br />
+            which significantly reduces cost and brings the latest hardware. <br />
             <br />
           </p>
           {/* <ActionButton /> */}
